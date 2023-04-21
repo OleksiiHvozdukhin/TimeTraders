@@ -33,3 +33,65 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+
+body {
+  color: var(--main-black-color);
+  background-color: var(--main-white-color);
+}
+
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+  max-width: 375px;
+
+  @media screen and (min-width: 768px) {
+    max-width: none;
+    width: 768px;
+    padding-left: 32px;
+    padding-right 32px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+    padding-left: 132px;
+    padding-right 132px;
+  }
+}
+
+.link {
+  text-decoration: none;
+  font-style: normal;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.section-title {
+  margin-bottom: 40px;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  color: var(--dark-green-color);
+
+  @media screen and (min-width: 768px) {
+    font-size: 40px;
+    line-height: 1.1;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 80px;
+  }
+}
