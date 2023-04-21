@@ -1,5 +1,34 @@
-/* About us styles */
+.container {
+  max-width: 375px;
+  padding: 0 20px;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+}
 
 .header {
-  background-color: pink;
+  position: absolute;
+  width: 100%;
+  padding-top: 36px;
+}
+.header-nav {
+}
+.header-logo-link {
+}
+.header-logo-svg {
+}
+.header-logo-text {
+  width: 80px;
+  height: 10px;
+  font-family: 'Epilogue', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: -0.03em;
+  color: var(main-white-color);
+  margin: 0;
+}
+.header-btn-mobil-menu {
 }
