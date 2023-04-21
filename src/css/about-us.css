@@ -1,4 +1,50 @@
 /* About us styles */
 .about-us {
-  background-color: pink;
+  display: block;
+  padding-top: 40px;
+  padding-bottom: 40px;  
+}
+
+.container-about-us {  
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.about-us-title {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  color: var(--dark-green-color);
+  margin-bottom: 40px;
+
+}
+
+.about-us-list {
+
+}
+
+.about-us-item {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.3;
+  letter-spacing: -0.02em;
+  color: var(--main-black-color);
+  margin-bottom: 20px;
+  max-width: 335px;
+}
+
+
+.about-us-gif {  
+  min-width: 183px;
+  height: 220px;
+  margin-top: 44px;
+}
+
+@media screen and (min-width:375px) {
+  .about-us-gif {
+      max-width: 335px;
+      height: 365px;
+      }
 }
