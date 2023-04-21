@@ -1,34 +1,90 @@
-.container {
-  max-width: 375px;
-  padding: 0 20px;
-}
-.header-container {
-  display: flex;
-  align-items: center;
-}
-
+/*------------------ MOBILE-HEADER---------------- */
 .header {
   position: absolute;
   width: 100%;
-  padding-top: 36px;
+  padding: 29px 0 69px 0;
+  background-color: var(--main-black-color);
+}
+
+.header-container {
+  display: flex;
 }
 .header-nav {
+  margin-right: auto;
+  display: flex;
+  align-items: baseline;
 }
+
 .header-logo-link {
-}
-.header-logo-svg {
-}
-.header-logo-text {
-  width: 80px;
-  height: 10px;
-  font-family: 'Epilogue', sans-serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 12px;
   letter-spacing: -0.03em;
-  color: var(main-white-color);
-  margin: 0;
+  color: var(--main-white-color);
 }
+.header-logo-svg {
+  margin-right: 4px;
+  background-color: var(--main-white-color);
+}
+
 .header-btn-mobil-menu {
+  padding: 0;
+  line-height: 0;
+  transition: 0.3s;
+  stroke: var(--main-white-color);
+  border: transparent;
+  outline: none;
+  position: relative;
+}
+
+.header-list {
+  display: none;
+}
+.header-nav-tel {
+  display: none;
+}
+
+/* ----------------TABLET-HEADER --------------------*/
+@media screen and (min-width: 768px) {
+  .header-btn-mobil-menu {
+    display: none;
+  }
+  .header-logo-svg {
+    width: 19px;
+    height: 19px;
+  }
+  .header-logo-link {
+    font-size: 15px;
+    line-height: 15px;
+    margin-right: 80px;
+  }
+  .header-list {
+    display: flex;
+  }
+  .header-list-item {
+    font-weight: 400;
+    font-size: 9px;
+    line-height: 1.33;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--main-white-color);
+    margin-right: 40px;
+  }
+
+  .header-nav-tel {
+    font-weight: 400;
+    font-size: 9px;
+    line-height: 1.33;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--main-white-color);
+    display: flex;
+    background: #1e2827;
+    border-radius: 8px;
+    padding: 18px 36px;
+  }
+}
+
+/* ----------------DECKTOP-HEADER --------------------*/
+@media screen and (min-width: 1280px) {
 }
