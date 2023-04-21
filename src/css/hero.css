@@ -1,5 +1,6 @@
 /* Hero styles */
 
 .hero {
-  background-color: pink;
+  background-color: #ccc;
+  font-size: 40px;
 }
