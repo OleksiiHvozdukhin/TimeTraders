@@ -1,0 +1,23 @@
+@media screen and (min-width: 768px) {
+  .section-title {
+    font-size: 40px;
+    line-height: 1.1;
+  }
+  .container {
+    max-width: none;
+    width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .section-title {
+    margin-bottom: 80px;
+  }
+  .container {
+    width: 1280px;
+    padding-left: 132px;
+    padding-right: 132px;
+  }
+}

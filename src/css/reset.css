@@ -1,4 +1,10 @@
 /* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 h1,
 h2,
 h3,
@@ -34,7 +40,6 @@ img {
   height: auto;
 }
 
-
 body {
   color: var(--main-black-color);
   background-color: var(--main-white-color);
@@ -45,19 +50,6 @@ body {
   padding-right: 20px;
   margin: 0 auto;
   max-width: 375px;
-
-  @media screen and (min-width: 768px) {
-    max-width: none;
-    width: 768px;
-    padding-left: 32px;
-    padding-right 32px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    width: 1280px;
-    padding-left: 132px;
-    padding-right 132px;
-  }
 }
 
 .link {
@@ -85,13 +77,4 @@ body {
   line-height: 1.25;
   letter-spacing: -0.02em;
   color: var(--dark-green-color);
-
-  @media screen and (min-width: 768px) {
-    font-size: 40px;
-    line-height: 1.1;
-  }
-
-  @media screen and (min-width: 1280px) {
-    margin-bottom: 80px;
-  }
 }
