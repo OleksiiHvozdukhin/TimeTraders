@@ -40,10 +40,23 @@ body {
 }
 
 .container {
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin: 0 auto;
   max-width: 375px;
+
+  @media screen and (min-width: 768px) {
+    max-width: none;
+    width: 768px;
+    padding-left: 32px;
+    padding-right 32px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+    padding-left: 132px;
+    padding-right 132px;
+  }
 }
 
 .link {
@@ -64,11 +77,20 @@ body {
   overflow: hidden;
 }
 
-.section-title{
+.section-title {
   margin-bottom: 40px;
   font-weight: 600;
   font-size: 32px;
   line-height: 1.25;
   letter-spacing: -0.02em;
   color: var(--dark-green-color);
+
+  @media screen and (min-width: 768px) {
+    font-size: 40px;
+    line-height: 1.1;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 80px;
+  }
 }
