@@ -2,7 +2,7 @@
 .header {
   position: absolute;
   width: 100%;
-  padding: 29px 0 69px 0;
+  padding: 29px 0 29px 0;
   background-color: var(--main-black-color);
 }
 
@@ -12,7 +12,7 @@
 .header-nav {
   margin-right: auto;
   display: flex;
-  align-items: baseline;
+  align-items: center;
 }
 
 .header-logo-link {
