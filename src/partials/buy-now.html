@@ -1,61 +1,70 @@
-<section class="about-us">
-  <!-- -------------------------------кнопка виклику модального меню------------->
+<section>
+  <!-- кнопка виклику модального меню-->
   <button class="buy" data-modal-open type="button">Buynow</button>
-  <!--------------------------------------Модальне меню-------------------------->
+  <!--Модальне меню---->
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
       <button type="button" class="btn-modal-close" data-modal-close>
-        <svg width="20" height="20">
-          <!-- <symbol id="icon-close-btn" viewBox="0 0 32 32"> -->
-          <path
-            d="M24 6.959c-0.287 0.001-0.547 0.118-0.734 0.306l-16 16c-0.188 0.188-0.304 0.448-0.304 0.734s0.116 0.546 0.304 0.734l-0-0c0.188 0.188 0.448 0.304 0.734 0.304s0.546-0.116 0.734-0.304l16-16c0.188-0.188 0.304-0.448 0.304-0.734s-0.116-0.546-0.304-0.734l0 0c-0.188-0.189-0.447-0.306-0.734-0.306h-0z">
-          </path>
-          <path
-            d="M8 6.959c-0.287 0.001-0.547 0.118-0.734 0.306l-0 0c-0.188 0.188-0.304 0.448-0.304 0.734s0.116 0.546 0.304 0.734l16 16c0.188 0.188 0.448 0.304 0.734 0.304s0.546-0.116 0.734-0.304l-0 0c0.188-0.188 0.304-0.448 0.304-0.734s-0.116-0.546-0.304-0.734l-16-16c-0.188-0.189-0.447-0.306-0.734-0.306h-0z">
-          </path>
-          <!-- </symbol> -->
+        <svg width="10" height="10">
           <!-- <use href="./img/icon.svg#icon-close-btn"></use> -->
         </svg>
       </button>
-      <!-- ----------------------Картка з годинником з каталогу------- -->
+      <!--Картка з годинником з каталогу-->
       <div class="model-card">
-        <img src="./img/watch.jpg" width="276" height="325" alt="watch model S42">
+        <img 
+            src="../img/6-buy-now/watch.jpg"
+            srcset="../img/6-buy-now/watch.jpg 1x, ../img/6-buy-now/watch@2x.jpg 2x" 
+            width="276" height="325" 
+            alt="watch model S42">
         <div class="model-info">
-          <p class="model">Tube Watch S42 Date Steel With Black Case</p>
+          <p class="model">Tube Watch S42 Date Steel With Black...</p>
           <span class="price">€395</span>
         </div>
       </div>
-      <!-- --------------------------Форма для заповнення покупцем--------------->
+      <!-- Форма для заповнення покупцем-->
       <form class="callback-form" name="callback-form" novalidate>
-        <!-- ------------------------------Ім'я --------------------------->
-        <div class="modal-field">
-          <label class="label-title" for="buyer-name">Full name</label>
-          <input class="modal-input" type="name" name="buyer-name" placeholder="Enter your full name" id="buyer-name"
-            required />
-        </div>
-        <!---------------------------------Пошта -------------------------->
-        <div class="modal-field">
-          <label class="label-title" for="buyer-email">Email</label>
-          <input class="modal-input" type="email" name="buyer-email" placeholder="Enter your email" id="buyer-email"
-            required />
-        </div>
-        <!-- -----------------------------Номер картки--------------------->
-        <div class="modal-field">
-          <label class="label-title" for="buyer-card-number">Card number</label>
-          <input class="modal-input" type="card-number" name="buyer-card-number" placeholder="Enter card"
-            id="buyer-card-number" required />
-        </div>
-        <!-- -----------------------------Коментар------------------------->
-        <div class="modal-field comment-field">
-          <label class="label-title" for="buyer-comment">Comments</label>
-          <textarea class="form-comment" placeholder="Enter your text" id="buyer-comment"></textarea>
-        </div>
-        <!------------------------------Купити мою прєлєсть---------------->
-        <button class="submit-btn" type="submit">submit</button>
-        <!--------------------------Те що ніхто не читає------------------->
-        <span class="info-text">By clicking on “Send message” button, you agree to our
-          <a href="" class="link-license">Privacy Policy</a>
-          , and allow Promodo to use this information for marketing purposes.</span>
+        <div class="callback-form-inputs">
+            <!-- Ім'я -->
+            <div class="modal-field">
+              <label class="label-title" for="buyer-name">Full name</label>
+              <input class="modal-input" 
+                     type="text" 
+                    name="buyer-name" 
+                     placeholder="Enter your full name"
+                     pattern="[a-z]{1,15}"
+                     title="Username should only contain lowercase letters. e.g. john"                     
+                     autofocus required/>                     
+            </div>
+            <!-- Пошта -->
+            <div class="modal-field">
+              <label class="label-title" for="buyer-email">Email</label>
+              <input class="modal-input" type="email" name="buyer-email" placeholder="Enter your email" id="buyer-email" required />
+            </div>
+            <!--Номер картки-->
+            <div class="modal-field">
+              <label class="label-title" for="buyer-card-number">Card number</label>
+              <input class="modal-input" 
+                type="card-number" 
+                name="buyer-card-number" 
+                pattern="[0-9]{16}"
+                placeholder="Enter card" 
+                id="buyer-card-number"
+                required />
+            </div>
+            <!-- Коментар-->
+            <div class="modal-field">
+              <label class="label-title" for="buyer-comment">Comments</label>
+              <textarea class="form-comment modal-input" placeholder="Enter your text" id="buyer-comment"></textarea>
+            </div>
+          </div>  
+          <div class="order">
+            <!--Купити мою прєлєсть-->
+            <button class="submit-btn" type="submit">submit</button>
+            <!--Те що ніхто не читає-->
+            <span class="info-text">By clicking on “Send message” button, you agree to our
+              <a href="https://privacy.microsoft.com/en-us" class="link-license">Privacy Policy</a>
+              , and allow Promodo to use this information for marketing purposes.</span>
+        </div>             
       </form>
     </div>
   </div>
