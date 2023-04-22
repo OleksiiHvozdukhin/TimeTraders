@@ -126,7 +126,7 @@
     }
   
   .about-us-list {
-      max-width: 700px;
+      max-width: 859px;
     }
 
   .about-us-item {
@@ -146,9 +146,6 @@
       min-height: 500px;
       margin-right: 0;
     }
-  .gif-img {
-    margin-right: 0;
-  }  
   
   .container-gif {
       width: 100%;
