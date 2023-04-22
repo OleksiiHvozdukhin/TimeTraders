@@ -23,6 +23,7 @@
 
 .about-us-list {
   display: block;
+  max-width: 335px;
 }
 
 .about-us-text1,  .about-us-text2 {
@@ -50,7 +51,7 @@
 
 @media screen and (min-width:375px) {
   .about-us-gif {
-      max-width: 100%;
+      max-width: 375px;
       min-height: 365px;
       }
 
@@ -82,7 +83,7 @@
   .about-us-item {
     display: flex;
     flex-direction: row;
-    gap: 40px;
+    gap: 20px;
     max-width: 100%;
   }
   .about-us-title {    
@@ -119,14 +120,18 @@
     }
 
   .container-about-us {
-      padding-left: 132px;
-      padding-right: 132px;
+      padding-left: 52px;
+      padding-right: 52px;
       column-gap: 110px;
     }
   
   .about-us-list {
       max-width: 700px;
     }
+
+  .about-us-item {
+    gap: 40px;
+  }
 
   .about-us-text1 {
       min-width: 439px;
@@ -139,7 +144,11 @@
   .about-us-gif {
       max-width: 892px;
       min-height: 500px;
+      margin-right: 0;
     }
+  .gif-img {
+    margin-right: 0;
+  }  
   
   .container-gif {
       width: 100%;
