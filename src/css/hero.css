@@ -40,7 +40,7 @@
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #fff;
+  background: var(--main-white-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -61,37 +61,56 @@
   width: 32px;
   height: 32px;
   border: 1px solid rgba(255, 255, 255, 0.5);
-  border-radius: 6px;
+  border-radius: 8px;
   background-image: url(/img/1-hero/left.svg);
   background-position: center;
   background-repeat: no-repeat;
+  z-index: 30;
 }
 .button-prev {
   width: 32px;
   height: 32px;
   border: 1px solid rgba(255, 255, 255, 0.5);
-  border-radius: 6px;
+  border-radius: 8px;
   background-image: url(/img/1-hero/left.svg);
   background-position: center;
   background-repeat: no-repeat;
   transform: rotate(180deg);
+  z-index: 30;
 }
 .button-prev:active,
 .button-next:active {
   border-color: rgba(255, 255, 255, 1);
 }
 .nav-swip {
+  position: relative;
   display: flex;
   gap: 10px;
   margin-top: 20px;
   margin-bottom: 40px;
 }
-
+.swiper-pagination-current {
+  position: relative;
+  margin-right: 40px;
+}
+.swiper-pagination-current::after {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  width: 32px;
+  height: 2px;
+  background-color: var(--main-white-color);
+  left: 10px;
+  top: 4px;
+}
 .hero .swiper-pagination-fraction {
+  width: auto;
   font-size: 14px;
-  color: #fff;
+  font-weight: 400;
+  line-height: 1.29; /* 18/14 */
+  color: var(--main-white-color);
   bottom: 0;
-  left: 35%;
+  left: 58%;
 }
 @media screen and (min-width: 768px) {
   .hero {
@@ -113,19 +132,41 @@
   }
   .hero-text {
     margin-left: 20px;
+    margin-bottom: 0;
+  }
+  .nav-swip {
+    margin-bottom: 40px;
+  }
+  .swiper-pagination-current {
+    margin-right: 48px;
+  }
+  .swiper-pagination-current::after {
+    width: 40px;
+  }
+  .button-prev,
+  .button-next {
+    width: 40px;
+    height: 40px;
   }
   .block-slider {
     min-width: 0;
   }
+  .hero .swiper-pagination-fraction {
+    left: 81%;
+  }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
+  .hero {
+    padding-bottom: 80px;
+  }
   .container.hero-container {
-    max-width: 1200px;
-    padding: 0 12px;
+    max-width: 1280px;
+    padding: 0 52px;
   }
   .hero-title {
     max-width: 750px;
     margin-right: 144px;
+    margin-bottom: 43px;
     order: 1;
   }
   .block-slider {
@@ -136,10 +177,16 @@
   }
   .hero-text {
     max-width: 282px;
+    align-self: flex-start;
+    margin-bottom: 0;
     margin-left: 0;
     order: 2;
   }
   .hero-container > picture {
     order: 4;
+    max-width: 676px;
+  }
+  .nav-swip {
+    margin-bottom: 0;
   }
 }
