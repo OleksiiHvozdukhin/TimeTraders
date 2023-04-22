@@ -11,7 +11,7 @@
   z-index: 1000;
   background-color: var(--dark-green-color);
   opacity: 1;
-  visibility: visible;
+  /* visibility: visible; */
 }
 .menu-container {
   display: flex;
