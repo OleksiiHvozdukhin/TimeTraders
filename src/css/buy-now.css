@@ -4,22 +4,19 @@
   height: 42px;
 
   padding: 14px 28px;
-  gap: 10px;
-  font-family: 'Epilogue';
-  font-style: normal;
-  font-weight: 400;
+
   font-size: 12px;
   line-height: 1.17;
 
   text-align: center;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: var(--main-white-color);
 
-  background: var(--btn-background);
+  background: var(--dark-green-color);
   border-radius: 8px;
 }
 
-/*---------------------Back drop---------*/
+/*--------------Back drop---------*/
 .backdrop {
   position: fixed;
   width: 100%;
@@ -29,7 +26,6 @@
   left: 0;
   z-index: 10;
   background: rgba(0, 0, 0, 0.2);
-  transition: opacity var(--time) var(--timing-function), visibility var(--time) var(--timing-function);
 }
 
 .backdrop.is-hidden {
@@ -44,23 +40,21 @@
   position: absolute;
   display: flex;
   flex-direction: column;
-  width: 335px;
-  height: 1073px;
+  gap: 40px;
+
+  max-width: 335px;
   padding: 40px 20px;
   top: 50%;
   left: 50%;
 
-  background: #FFFFFF;
+  background: var(--main-white-color);
   box-shadow: 0px 0px 223px rgba(0, 0, 0, 0.05),
     0px 0px 130.6px rgba(0, 0, 0, 0.037963),
     0px 0px 71.0296px rgba(0, 0, 0, 0.0303704),
     0px 0px 36.2375px rgba(0, 0, 0, 0.025),
     0px 0px 18.1704px rgba(0, 0, 0, 0.0196296),
     0px 0px 8.77546px rgba(0, 0, 0, 0.012037);
-  /* border-radius: 4px; */
 
-  transition: transform var(--time);
-  transition-timing-function: var(--timing-function);
   transform: translate(-50%, -50%) scale(1);
 }
 
@@ -73,14 +67,210 @@
 
   top: 12px;
   right: 12px;
-  background: #fff;
-  color: #141414;
+  background: var(--main-white-color);
+  color: var(--dark-green-color);
+  border: none;
+
+  /* місце для вашої реклами*/
+  outline: 1px red solid;
+  /* місце для вашої реклами*/
 
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
-  transition-property: fill;
-  transition-duration: var(--time);
-  transition-timing-function: var(--timing-function);
+}
+
+/*------------------------Картка з годинником -----------*/
+.model-card {
+  display: flex;
+  flex-direction: column;
+  padding: 0 9.5px;
+  gap: 14px;
+}
+
+.model-card img {
+  margin: 0 auto;
+}
+
+.model {
+  margin-bottom: 4px;
+
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+}
+
+.price {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: -0.02em;
+  color: var(--text-gray-color);
+}
+
+/*-----------------Форма для заповнення------------*/
+.callback-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.callback-form-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.modal-field {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.label-title {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: -0.02em;
+}
+
+.modal-input {
+  display: block;
+  outline: 0;
+
+  font-family: inherit;
+  padding: 12px 16px;
+  width: 100%;
+
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+
+  border: 1px solid var(--text-gray-color);
+  border-radius: 8px;
+}
+
+.modal-input:invalid {
+  border-color: red;
+  /*var(--invalid-color)*/
+}
+
+.modal-input:valid {
+  border-color: var(--dark-green-color);
+}
+
+.form-comment {
+  font-family: inherit;
+  padding: 12px 16px;
+  width: 100%;
+  height: 170px;
+
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+
+  outline: none;
+  border: 1px solid var(--text-gray-color);
+  border-radius: 8px;
+}
+
+/*--------------------------Кнопка замовлення--------*/
+.submit-btn {
+  padding-top: 18px;
+  padding-bottom: 18px;
+
+  width: 100%;
+
+  font-size: 12px;
+  line-height: 1.17;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: var(--main-white-color);
+  background: var(--dark-green-color);
+  border-radius: 8px;
+}
+
+.order {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/*----------------------інформація про згоду-------*/
+.info-text {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: -0.02em;
+
+  color: var(--numeral-gray-color);
+}
+
+.link-license {
+  text-decoration: underline;
+}
+
+/*-----медіа правила (резина) від 180 до 375 пікселів-----*/
+@media screen and (min-width:180px) and (max-width:374px) {
+  .modal-input {
+    width: 175px;
+  }
+}
+
+/*---------медія для моб версії адаптив-----------*/
+@media screen and (min-width:375px) and (max-width:767px) {
+  .modal {
+    width: 335px;
+  }
+}
+
+/*-----------------планшетна версія------------------*/
+@media screen and (min-width:768px) and (max-width:1279px) {
+  .modal {
+    padding: 40px;
+    width: 744px;
+    max-width: 744px;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .btn-modal-close {
+    top: 20px;
+    right: 20px;
+  }
+
+  .callback-form {
+    width: 368px;
+  }
+
+  .label-title {
+    font-size: 14px;
+    line-height: 1.29;
+  }
+
+  .modal-input {
+    font-size: 16px;
+    line-height: 1.12;
+  }
+}
+
+@media screen and (min-width:1280px) {
+  .modal {
+    flex-direction: row;
+    width: 904px;
+    max-width: 904px;
+    gap: 40px;
+  }
+
+  .callback-form {
+    width: 508px;
+    gap: 40px;
+  }
+
+  .callback-form-inputs {
+    gap: 24px;
+  }
+
+  .info-text {
+    width: 391px;
+  }
 }
