@@ -5,6 +5,8 @@
 
   padding: 14px 28px;
 
+  font-family: inherit;
+  border: none;
   font-size: 12px;
   line-height: 1.17;
 
@@ -42,7 +44,6 @@
   flex-direction: column;
   gap: 40px;
 
-  max-width: 335px;
   padding: 40px 20px;
   top: 50%;
   left: 50%;
@@ -144,6 +145,7 @@
   line-height: 1.29;
   letter-spacing: -0.02em;
 
+  background-color: var(--main-white-color);
   border: 1px solid var(--text-gray-color);
   border-radius: 8px;
 }
@@ -181,6 +183,7 @@
 
   font-size: 12px;
   line-height: 1.17;
+  border: none;
 
   text-align: center;
   text-transform: uppercase;
@@ -211,6 +214,10 @@
 
 /*-----медіа правила (резина) від 180 до 375 пікселів-----*/
 @media screen and (min-width:180px) and (max-width:374px) {
+  .modal {
+    max-width: 335px;
+  }
+
   .modal-input {
     width: 175px;
   }
@@ -232,7 +239,7 @@
   .modal {
     padding: 40px;
     width: 744px;
-    max-width: 744px;
+
     flex-direction: row;
     gap: 20px;
   }
@@ -261,7 +268,7 @@
   .modal {
     flex-direction: row;
     width: 904px;
-    max-width: 904px;
+
     gap: 40px;
   }
 
