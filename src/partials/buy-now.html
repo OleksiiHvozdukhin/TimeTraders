@@ -1,6 +1,6 @@
 <section>  
   <!-- кнопка виклику модального меню-->
-  <button class="buy" data-modal-open type="button">Buynow</button>
+  <button class="buy" data-modal-open type="button">Buy now</button>
   <!--Модальне меню---->
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
@@ -33,7 +33,9 @@
                      placeholder="Enter your full name"
                      pattern="[a-z]{1,15}"
                      title="Username should only contain lowercase letters. e.g. john"                     
-                     autofocus required/>                     
+                     autofocus required
+                     id="buyer-name"
+                     />                     
             </div>
             <!-- Пошта -->
             <div class="modal-field">
