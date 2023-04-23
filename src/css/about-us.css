@@ -42,6 +42,7 @@
 .about-us-gif {
   max-width: 100%;
   min-height: 220px;
+  object-fit: cover;
 
 }
 
@@ -50,6 +51,7 @@
   max-height: 220px;
   margin-top: 40px;
 }
+
 
 @media screen and (min-width:375px) {
   .about-us-gif {
