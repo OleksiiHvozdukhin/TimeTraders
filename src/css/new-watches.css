@@ -1,5 +1,56 @@
-/* New watches styles */
 
+/*----------------------- NEW WATCHES ------------------------*/
 .new-watches {
-  background-color: pink;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.new-watches-subtitle {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.06em;
+  margin-bottom: 8px;
+  color: var(--numeral-gray-color);
+}
+
+.new-watches-img {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 20px;
+}
+
+@media screen and (min-width: 375px) {
+  .new-watches-img-items {
+    max-width: 335px;
+    min-height: 260px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .new-watches-img {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .section-title {
+    max-width: 576px;
+  }
+
+  .new-watches-img-items {
+    max-width: 342px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .new-watches-img {
+    gap: 24px;
+  }
+
+  .new-watches-img-items {
+    max-width: 576px;
+    min-height: 422px;
+  }
 }
