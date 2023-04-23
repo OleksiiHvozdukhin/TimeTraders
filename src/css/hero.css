@@ -155,14 +155,14 @@
     left: 81%;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1440px) {
   .hero {
     padding-bottom: 80px;
   }
-  .container.hero-container {
+  /* .container.hero-container {
     max-width: 1280px;
     padding: 0 52px;
-  }
+  } */
   .hero-title {
     max-width: 750px;
     margin-right: 144px;
