@@ -38,6 +38,10 @@
 }
 
 /*-----------------modal------------*/
+.title-modal {
+  display: none;
+}
+
 .modal {
   position: absolute;
   display: flex;
