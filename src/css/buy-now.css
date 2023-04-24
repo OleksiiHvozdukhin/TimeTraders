@@ -1,8 +1,3 @@
-/* Buy now styles */
-.buy-now {
-  background-color: pink;
-}
-
 /*-----кнопка виклику------*/
 /* .buy {
   width: 108px;
@@ -80,10 +75,6 @@
   background: var(--main-white-color);
   color: var(--dark-green-color);
   border: none;
-
-  /* місце для вашої реклами*/
-  outline: 1px red solid;
-  /* місце для вашої реклами*/
 
   display: flex;
   justify-content: center;
