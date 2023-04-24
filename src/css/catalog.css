@@ -2,7 +2,9 @@
 
 
 /* Catalog styles */
-
+.catalog-list-item {
+  position: relative; 
+}
 
 .catalog-foto-container {
   position: relative;
@@ -22,6 +24,7 @@
   top: 14px;
   right: 14px;
   z-index: 2;
+  background-color: inherit;
 }
 
 .catalog-item-name {
@@ -67,7 +70,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  transform: translateY(100%);
+  transform: translateY(101%);
   transition: transform 250ms linear;
 
   background-color: var(--dark-green-color);
@@ -149,7 +152,7 @@
   }
 }
 
-@media screen and (max-width: 1279px) {
+@media screen and (max-width: 1439px) {
   .catalog-list-item:nth-child(n + 9) {
     display: none;
   }
