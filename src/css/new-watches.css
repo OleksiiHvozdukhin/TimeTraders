@@ -37,6 +37,7 @@
 
   .section-title {
     max-width: 448px;
+    font-size: 40px;
   }
 
   .new-watches-img-items {
@@ -53,4 +54,8 @@
     max-width: 576px;
     max-height: 422px;
   }
+    .section-title {
+      max-width: 448px;
+      margin-bottom: 80px;
+    }
 }
