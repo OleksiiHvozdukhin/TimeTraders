@@ -89,7 +89,11 @@
 
   .about-us-text1 {
     margin-bottom: 0;
+    max-width: 220px;     
+  }
 
+  .about-us-text2 {
+    max-width: 250px;
   }
 
 
