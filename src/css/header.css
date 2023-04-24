@@ -2,7 +2,7 @@
 .header {
   position: absolute;
   width: 100%;
-  padding: 29px 0 29px 0;
+  padding: 20px 0 20px 0;
   background-color: var(--main-black-color);
 }
 
