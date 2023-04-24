@@ -1,6 +1,5 @@
 /*----------------------- NEW WATCHES ------------------------*/
 .new-watches {
-  background-image: url(../img/4-new-watches/mobile-new-watches.jpg);
   padding-top: 40px;
   padding-bottom: 40px;
 }
@@ -44,7 +43,7 @@
     }
   .new-watches-img-items {
     max-width: 576px;
-    min-height: 422px;
+    max-height: 422px;
   }
 }
   
