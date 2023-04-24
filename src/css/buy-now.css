@@ -156,7 +156,6 @@
 
 .modal-input:focus:invalid {
   border-color: red;
-  /*var(--invalid-color)*/
 }
 
 .modal-input::focus:valid {
