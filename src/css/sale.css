@@ -1,7 +1,7 @@
 /* Sale styles */
-.sale {
+.sale.section {
+  padding-bottom: 80px;
   padding-top: 40px;
-  padding-bottom: 146px;
 }
 
 .sale-item-container {
@@ -11,6 +11,7 @@
 
 .sale-pictures {
   display: flex;
+  gap: 20px;
 }
 
 .sale-small-pictures {
@@ -24,8 +25,7 @@
   width: 100%;
 }
 
-.sale-big-picture {
-  margin-left: 20px;
+.sale-big-picture {  
   max-width: 235px;
   width: 100%;
 }
@@ -73,21 +73,21 @@
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: -0.02em;
-  text-decoration-line: line-through;
+  text-decoration-line: line-through;  
   color: var(--text-gray-color);
 }
 
 .sale-descr-title {
+  font-weight: 400;
   font-size: 18px;
   line-height: 1.33;
   letter-spacing: -0.02em;
-  text-transform: uppercase;
+  text-transform: uppercase;  
 }
 
 .sale-descr-title::before {
   display: block;
   content: '';
-  max-width: 335px;
   height: 1px;
   background-color: var(--main-black-color);
   margin-bottom: 8px;
@@ -96,7 +96,7 @@
 .sale-descr-title::after {
   position: absolute;
   right: 0;
-  top: 20px;
+  top: 18px;
   content: ' ';
   width: 16px;
   height: 1px;
@@ -120,8 +120,8 @@
 
 @media screen and (min-width: 768px) {
 
-  .sale {
-    padding-top: 88px;
+  .sale.section {
+    padding-top: 64px;
     padding-bottom: 128px;
   }
 
@@ -152,24 +152,21 @@
     font-size: 38px;
     line-height: 1.05;
   }
-
-  .sale-descr-title::before {
-    max-width: 572px;
-  }
-
+  
 }
 
-@media screen and (min-width: 1280px) {
-  .sale {
+@media screen and (min-width: 1440px) {
+  .sale.section {
     background-color: #EFEFEF;
-    padding-top: 116px;
-    padding-bottom: 165px;
+    padding-top: 80px;
+    padding-bottom: 160px;
   }
 
-  /*удалить*/
+  /*удалить после слияния*/
   .sale .container {
-    padding-left: 52px;
-    padding-right: 52px;
+    max-width: 1440px;
+    padding-left: 132px;
+    padding-right: 132px;
   }
 
   .sale-item-container {
@@ -198,9 +195,5 @@
 
   .sale-descr-container:first-child {
     margin-bottom: 20px;
-  }
-
-  .sale-descr-title::before {
-    max-width: 369px;
   }
 }
