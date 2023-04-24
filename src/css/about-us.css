@@ -12,8 +12,6 @@
   letter-spacing: -0.02em;
   color: var(--dark-green-color);
   margin-bottom: 40px;
-  white-space: nowrap;
-
 }
 
 .about-us-text1,
@@ -69,7 +67,6 @@
 
   .container-about {
     display: flex;
-    max-width: 100%;
     gap: 40px;
   }
 
