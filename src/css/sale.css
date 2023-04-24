@@ -60,10 +60,11 @@
 .sale-item-prices {
   display: flex;
   align-items: center;
+  gap: 8px;
 }
 
 .sale-item-price {
-  margin-right: 8px;
+  /*margin-right: 8px;*/
   font-size: 18px;
   line-height: 1.33;
   letter-spacing: -0.02em;
@@ -169,6 +170,10 @@
     padding-right: 132px;
   }
 
+  .container .section-title{
+    margin-bottom: 80px;
+  }
+
   .sale-item-container {
     width: 981px;
     display: flex;
@@ -176,7 +181,8 @@
 
 
   .sale-descr-container {
-    margin: 0;
+    margin-top: 0px;
+    margin-bottom: 20px;
     width: 100%;
   }
 
@@ -185,15 +191,19 @@
   }
 
   .descr-item-container {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 369px;
+    /*display: flex;
     gap: 20px;
+    flex-wrap: wrap;*/
+    max-width: 369px;    
     margin-left: 40px;
     margin-top: 0;
   }
 
   .sale-descr-container:first-child {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+  }
+
+  .sale-descr-container:last-child {
+    margin-bottom: 0;
   }
 }
