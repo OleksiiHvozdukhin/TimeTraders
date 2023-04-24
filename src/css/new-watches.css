@@ -51,6 +51,6 @@
 
   .new-watches-img-items {
     max-width: 576px;
-    min-height: 422px;
+    max-height: 422px;
   }
 }
