@@ -208,6 +208,7 @@
   .footer-flex {
     font-size: 14px;
     line-height: 1.2em;
+    margin-bottom: 0;
   }
   .address-information {
     font-size: 18px;
