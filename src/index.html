@@ -12,6 +12,10 @@
     />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/media.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
     <title>The Watch Spot</title>
   </head>
 
@@ -43,6 +47,36 @@
     <load src="./partials/buy-now.html" />
 
     <script type="module" src="./main.js"></script>
-    <script src="./js/modal.js"></script>
+    <script type="module" src="./js/modal.js"></script>
+    <!-- SWIPER JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper('.mySwiper', {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        loop: true,
+        keyboard: {
+          enabled: true,
+        },
+        navigation: {
+          nextEl: '.button-next',
+          prevEl: '.button-prev',
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          type: 'fraction',
+          renderFraction: function (currentClass, totalClass) {
+            return (
+              '0<span class="' +
+              currentClass +
+              '"></span>' +
+              '0<span class="' +
+              totalClass +
+              '"></span>'
+            );
+          },
+        },
+      });
+    </script>
   </body>
 </html>
