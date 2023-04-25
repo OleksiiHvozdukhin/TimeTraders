@@ -23,10 +23,35 @@
   display: flex;
   align-items: center;
   color: var(--main-white-color);
+  position: relative;
 }
+
+.header-logo-link::after {
+  content: '';
+  width: 0;
+  height: 2px;
+  position: absolute;
+  bottom: -7px;
+  /* right: 0; */
+  left: 0;
+  background: var(--main-white-color);
+  transition: width 0.5s, left 1s;
+}
+
+.header-logo-link:hover::after {
+  width: 100%;
+  /* left: 0; */
+}
+
 .header-logo-svg {
   margin-right: 4px;
   fill: var(--main-white-color);
+  transition: width 750ms, left 1s;
+}
+
+.header-logo-link:hover .header-logo-svg {
+  width: 21px;
+  height: 21px;
 }
 
 .header-btn-mobil-menu {
@@ -75,17 +100,42 @@
     color: var(--main-white-color);
   }
 
+  .header-link-contact {
+    position: relative;
+  }
+  .header-link-contact::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    background: var(--main-white-color);
+    transition: width 0.5s, left 0.5s;
+  }
+
+  .header-link-contact:hover::after {
+    width: 100%;
+  }
+
   .header-nav-tel {
     font-weight: 400;
     font-size: 9px;
     line-height: 1.33;
     text-align: center;
+    white-space: nowrap;
     text-transform: uppercase;
     color: var(--main-white-color);
     display: flex;
     background: #1e2827;
     border-radius: 8px;
     padding: 18px 36px;
+    transition: all 250ms ease;
+    max-width: 160px;
+  }
+
+  .header-nav-tel:hover {
+    background-color: #1e282790;
   }
 }
 

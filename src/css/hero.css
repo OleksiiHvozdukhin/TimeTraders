@@ -66,7 +66,9 @@
   background-position: center;
   background-repeat: no-repeat;
   z-index: 30;
+  transition: all 250ms ease;
 }
+
 .button-prev {
   width: 32px;
   height: 32px;
@@ -77,7 +79,19 @@
   background-repeat: no-repeat;
   transform: rotate(180deg);
   z-index: 30;
+  transition: all 250ms ease;
 }
+
+.button-next:hover {
+  transform: scale(1.1);
+  border-color: rgba(255, 255, 255, 0.75);
+}
+
+.button-prev:hover {
+  transform: scale(1.1) rotate(180deg);
+  border-color: rgba(255, 255, 255, 0.75);
+}
+
 .button-prev:active,
 .button-next:active {
   border-color: rgba(255, 255, 255, 1);
@@ -150,6 +164,7 @@
   .button-next {
     width: 40px;
     height: 40px;
+    cursor: pointer;
   }
   .block-slider {
     min-width: 0;

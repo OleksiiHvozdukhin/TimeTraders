@@ -132,6 +132,7 @@
   background-color: var(--main-white-color);
   border: 1px solid var(--text-gray-color);
   border-radius: 8px;
+  transition: all 250ms linear;
 }
 
 /*-----------Перевірка вводу на коректність--------*/
@@ -179,6 +180,9 @@
   border-radius: 8px;
 }
 
+.submit-btn:hover {
+}
+
 .order {
   display: flex;
   flex-direction: column;
@@ -199,9 +203,11 @@
 }
 
 /*-----медіа правила (резина) від 180 до 375 пікселів-----*/
-@media screen and (min-width:180px) and (max-width:374px) {
+@media screen and (min-width: 180px) and (max-width: 374px) {
   .modal {
     max-width: 335px;
+    overflow: auto;
+    height: 100%;
   }
 
   .modal-input {
@@ -214,14 +220,17 @@
 }
 
 /*---------медія для моб версії адаптив-----------*/
-@media screen and (min-width:375px) and (max-width:767px) {
+/* @media screen and (min-width: 375px) and (max-width: 767px) { */
+@media screen and (max-width: 767px) {
   .modal {
     width: 335px;
+    overflow: auto;
+    height: 100%;
   }
 }
 
 /*-----------------планшетна версія------------------*/
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
   .modal {
     padding: 40px;
     width: 744px;
@@ -257,7 +266,7 @@
   }
 }
 
-@media screen and (min-width:1440px) {
+@media screen and (min-width: 1440px) {
   .modal {
     flex-direction: row;
     width: 904px;

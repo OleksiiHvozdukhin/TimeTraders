@@ -45,6 +45,10 @@ body {
   background-color: var(--main-white-color);
 }
 
+body.no-scroll {
+  overflow: hidden;
+}
+
 .container {
   width: 100%;
   padding: 0 20px;
