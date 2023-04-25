@@ -46,7 +46,7 @@
 .header-logo-svg {
   margin-right: 4px;
   fill: var(--main-white-color);
-  transition: width 750ms, left 1s;
+  transition: width 750ms ease;
 }
 
 .header-logo-link:hover .header-logo-svg {
