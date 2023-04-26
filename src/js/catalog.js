@@ -78,7 +78,7 @@ const showDetails = () => {
     item.addEventListener('click', event => {
       event.preventDefault();
 
-      item.children[0].children[0].children[1].classList.toggle('checked');
+      // item.children[0].children[0].children[1].classList.toggle('checked');
 
       if (!item.children[1].children[0].classList.contains('like-heart')) {
         if (

@@ -93,15 +93,15 @@
 .like-heart {
   stroke: rgb(207, 74, 74);
 }
-/* .catalog-item-link:hover .catalog-card-container,
+.catalog-item-link:hover .catalog-card-container,
 .catalog-item-link:focus .catalog-card-container {
   transform: translateY(0%);
-} */
+}
 
-/* .catalog-item-link:hover + .button-heart > .catalog-icon,
+.catalog-item-link:hover + .button-heart > .catalog-icon,
 .catalog-item-link:focus + .button-heart > .catalog-icon {
   stroke: var(--main-white-color);
-} */
+}
 
 .catalog-card-item {
   margin-bottom: 14px;

@@ -27,7 +27,7 @@
   display: flex;
   flex-direction: column;
   overflow: auto;
-  height: 100%;
+  max-height: 1073px;
   gap: 40px;
 
   padding: 40px 20px;
@@ -211,7 +211,6 @@
   .modal {
     max-width: 335px;
     overflow: auto;
-    height: 100%;
   }
 
   .modal-input {
@@ -229,7 +228,20 @@
   .modal {
     width: 335px;
     overflow: auto;
-    height: 100%;
+    max-height: 1073px;
+  }
+
+  .model-card {
+    width: 276px;
+  }
+
+  .model-card > .model-info > .model {
+    margin-top: 39px;
+    margin-bottom: 4px;
+  }
+
+  .model-card > .model-info > .price {
+    margin-top: 4px;
   }
 }
 
@@ -238,9 +250,27 @@
   .modal {
     padding: 40px;
     width: 744px;
+    overflow: auto;
+    max-height: 670px;
 
     flex-direction: row;
     gap: 20px;
+  }
+
+  #productsList {
+  }
+
+  .model-card {
+    width: 276px;
+  }
+
+  .model-card > .model-info > .model {
+    margin-top: 39px;
+    margin-bottom: 4px;
+  }
+
+  .model-card > .model-info > .price {
+    margin-top: 4px;
   }
 
   .icon-close {
@@ -270,6 +300,7 @@
   .modal {
     flex-direction: row;
     width: 904px;
+    min-height: 694px;
 
     gap: 40px;
   }
