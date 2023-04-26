@@ -28,17 +28,16 @@ const createElement = (tag, className, textContent) => {
 
 const addToStore = () => {
   const buttons = document.getElementsByClassName('button-heart');
+
   for (let item of buttons) {
-    // console.log(item);
     item.addEventListener('click', () => {
+      const src =
+        item.previousElementSibling.children[0].children[0].getAttribute('src');
+      const title = item.previousElementSibling.children[1].textContent;
+      const price = item.previousElementSibling.children[2].textContent;
+
       if (!item.children[0].classList.contains('like-heart')) {
-        item.children[0].classList.toggle('like-heart');
-        const src =
-          item.previousElementSibling.children[0].children[0].getAttribute(
-            'src'
-          );
-        const title = item.previousElementSibling.children[1].textContent;
-        const price = item.previousElementSibling.children[2].textContent;
+        item.children[0].classList.add('like-heart');
 
         const modelCard = createElement('div', 'model-card', null);
         productsList.append(modelCard);
@@ -56,8 +55,17 @@ const addToStore = () => {
         const priceElement = createElement('span', 'price', price);
         modelInfo.append(priceElement);
 
-        console.log(price);
+        // console.log(price);
       } else {
+        item.children[0].classList.remove('like-heart');
+
+        const cards = document.getElementsByClassName('model-card');
+
+        for (let card of cards) {
+          if (card.children[1].children[0].textContent === title) {
+            card.remove();
+          }
+        }
       }
     });
   }
@@ -73,7 +81,13 @@ const showDetails = () => {
       item.children[0].children[0].children[1].classList.toggle('checked');
 
       if (!item.children[1].children[0].classList.contains('like-heart')) {
-        item.children[1].children[0].classList.toggle('checked-heart');
+        if (
+          item.children[0].children[0].children[1].classList.contains('checked')
+        ) {
+          item.children[1].children[0].classList.add('checked-heart');
+        } else {
+          item.children[1].children[0].classList.remove('checked-heart');
+        }
       }
     });
   }

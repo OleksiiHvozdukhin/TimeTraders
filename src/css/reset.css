@@ -86,3 +86,17 @@ body.no-scroll {
   letter-spacing: -0.02em;
   color: var(--dark-green-color);
 }
+
+/* Custom scroll bar */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--main-black-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: grey;
+  border-radius: 5px;
+}

@@ -99,6 +99,8 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+  /*  */
+  width: 100%;
 }
 
 .callback-form-inputs {
@@ -205,7 +207,7 @@
 }
 
 /*-----медіа правила (резина) від 180 до 375 пікселів-----*/
-@media screen and (min-width: 180px) and (max-width: 374px) {
+@media screen and (max-width: 374px) {
   .modal {
     max-width: 335px;
     overflow: auto;
@@ -213,7 +215,7 @@
   }
 
   .modal-input {
-    width: 175px;
+    width: 100%;
   }
 
   .btn-modal-close {
@@ -253,10 +255,6 @@
     height: 24px;
   }
 
-  .callback-form {
-    width: 368px;
-  }
-
   .label-title {
     font-size: 14px;
     line-height: 1.29;
@@ -277,7 +275,6 @@
   }
 
   .callback-form {
-    width: 508px;
     gap: 40px;
   }
 
